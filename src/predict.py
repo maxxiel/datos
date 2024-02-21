@@ -18,7 +18,7 @@ def score_model(filename, scores):
     # Predecimos sobre el set de datos de Scoring    
     res = model.predict(df).reshape(-1,1)
     pred = pd.DataFrame(res, columns=['PREDICT'])
-    pred.to_csv(os.path.join('../data/scores/', scores))
+    pred.to_csv(os.path.join('../datas/scores/', scores))
     print(scores, 'exportado correctamente en la carpeta scores')
 
 

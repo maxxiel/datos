@@ -64,7 +64,7 @@ def data_preparation(df):
 # Exportamos la matriz de datos con las columnas seleccionadas
 def data_exporting(df, features, filename):
     dfp = df[features]
-    dfp.to_csv(os.path.join('../data/processed/', filename))
+    dfp.to_csv(os.path.join('../datas/processed/', filename))
     print(filename, 'exportado correctamente en la carpeta processed')
 
 

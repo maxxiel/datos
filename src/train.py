@@ -10,7 +10,7 @@ import os
 
 # Cargar la tabla transformada
 def read_file_csv(filename):
-    df = pd.read_csv(os.path.join('../data/processed', filename)).set_index('ID')
+    df = pd.read_csv(os.path.join('../datas/processed', filename)).set_index('ID')
     X_train = df.drop(['DEFAULT'],axis=1)
     y_train = df[['DEFAULT']]
     print(filename, ' cargado correctamente')
